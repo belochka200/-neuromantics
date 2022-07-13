@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "FemmeFatale";
+  src: url("/src/assets/fonts/FemmeFatale-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("/src/assets/fonts/RobotoFlex.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #232323;
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: #f8f7fd;
+}
+
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #bbaaff;
+}
+
+h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
+  font-family: "FemmeFatale", sans-serif;
+  font-size: calc(16px * 3);
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=index.css.map */

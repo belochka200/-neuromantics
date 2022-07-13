@@ -1,0 +1,18 @@
+.btnDefault, .btnOutline {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 2px solid #bbaaff;
+  text-transform: uppercase;
+}
+
+.btnOutline {
+  background: transparent;
+  color: #bbaaff;
+}
+
+.btnDefault {
+  background: #bbaaff;
+  color: #232323;
+}
+
+/*# sourceMappingURL=Button.module.css.map */

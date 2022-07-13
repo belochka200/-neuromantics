@@ -1,0 +1,96 @@
+@import "../../../assets/variables.scss";
+@import "../../../assets/utility.scss";
+
+.mainScreen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  .titles {
+    position: absolute;
+    width: 500px;
+    .title {
+      letter-spacing: $letter-spacing;
+      font-weight: 1000;
+    }
+    .subtitle {
+      font-family: "Roboto Flex", sans-serif;
+      margin-top: $margin;
+      letter-spacing: calc(#{$letter-spacing} / 6);
+      font-weight: 100;
+    }
+    .buttons {
+      margin-top: calc(#{$margin} * 2);
+      button {
+        margin-right: $margin;
+      }
+    }
+  }
+}
+
+.bg {
+  .cubes {
+    li {
+      position: absolute;
+      z-index: -2;
+      display: block;
+      list-style: none;
+      width: 200px;
+      height: 200px;
+      border-radius: $border-radius;
+      background: $primary;
+      opacity: 0;
+      animation: bg linear 10s infinite;
+      transition: all .5s ease-in-out;
+      &:nth-child(2) {
+        left: 20%;
+        animation-delay: 2s;
+      }
+      &:nth-child(3) {
+        left: 30%;
+        animation-delay: 4s;
+      }
+      &:nth-child(4) {
+        left: 40%;
+        animation-delay: 3s;
+      }
+      &:nth-child(5) {
+        left: 50%;
+        animation-delay: 6s;
+      }
+      &:nth-child(6) {
+        left: 60%;
+        animation-delay: 5s;
+      }
+      &:nth-child(7) {
+        left: 70%;
+        animation-delay: 10s;
+      }
+      &:nth-child(8) {
+        left: 80%;
+        animation-delay: 1s;
+      }
+      &:nth-child(9) {
+        left: 90%;
+        animation-delay: 2s;
+      }
+    }
+  }
+}
+
+@keyframes bg {
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+    border-radius: 0;
+  }
+  50% {
+    opacity: .25;
+  }
+  100%{
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}

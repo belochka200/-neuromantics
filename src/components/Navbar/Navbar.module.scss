@@ -1,0 +1,18 @@
+@import '../../assets/variables';
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  background: rgba($white, .25);
+  border-radius: $border-radius;
+  padding: $padding;
+  backdrop-filter: blur(24px);
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+      margin-left: $margin;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../assets/variables.scss';
+
+%btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 2px solid $primary;
+  text-transform: uppercase;
+}
+
+.btnOutline {
+  @extend %btn;
+  background: transparent;
+  color: $primary;
+}
+
+.btnDefault {
+  @extend %btn;
+  background: $primary;
+  color: $black;
+}
