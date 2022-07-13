@@ -1,13 +1,16 @@
 @import '../../assets/variables';
 
 .navbar {
-  width: 100%;
-  position: absolute;
+  width: auto;
+  position: fixed;
+  z-index: 666;
   top: 16px;
-  background: rgba($white, .25);
+  left: 16px;
+  right: 16px;
+  background: rgba($white, .1);
   border-radius: $border-radius;
   padding: $padding;
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(32px);
   ul {
     display: flex;
     li {

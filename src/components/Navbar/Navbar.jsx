@@ -6,7 +6,7 @@ import '../../assets/grid.css'
 const Navbar = () => {
     return (
         <nav className={styles.navbar}>
-            <ul>
+            <ul className={"container"}>
                 <NavLink to={"/"}>
                     <li>Главная</li>
                 </NavLink>

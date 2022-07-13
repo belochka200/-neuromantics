@@ -1,11 +1,14 @@
 .navbar {
-  width: 100%;
-  position: absolute;
+  width: auto;
+  position: fixed;
+  z-index: 666;
   top: 16px;
-  background: rgba(248, 247, 253, 0.25);
+  left: 16px;
+  right: 16px;
+  background: rgba(248, 247, 253, 0.1);
   border-radius: 16px;
   padding: 16px;
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(32px);
 }
 .navbar ul {
   display: flex;
