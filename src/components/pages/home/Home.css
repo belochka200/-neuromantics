@@ -42,7 +42,7 @@
   width: 200px;
   height: 200px;
   border-radius: 16px;
-  background: #bbaaff;
+  background: #f8f7fd;
   opacity: 0;
   animation: bg linear 10s infinite;
   transition: all 0.5s ease-in-out;
@@ -85,14 +85,17 @@
     transform: translateY(0) rotate(0deg);
     opacity: 0;
     border-radius: 0;
+    background: #f8f7fd;
   }
   50% {
-    opacity: 0.25;
+    opacity: 0.1;
+    background: #bbaaff;
   }
   100% {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+    background: #f8f7fd;
   }
 }
 

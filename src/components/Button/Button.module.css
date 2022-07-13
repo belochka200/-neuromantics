@@ -3,16 +3,25 @@
   cursor: pointer;
   border: 2px solid #bbaaff;
   text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
 }
 
 .btnOutline {
   background: transparent;
   color: #bbaaff;
 }
+.btnOutline:hover {
+  background: #bbaaff;
+  color: #232323;
+}
 
 .btnDefault {
   background: #bbaaff;
   color: #232323;
+}
+.btnDefault:hover {
+  background: transparent;
+  color: #bbaaff;
 }
 
 /*# sourceMappingURL=Button.module.css.map */

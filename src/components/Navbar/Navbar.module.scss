@@ -13,6 +13,9 @@
     li {
       list-style: none;
       margin-left: $margin;
+      color: $white;
+      &.active { color: $primary }
+      &:hover { color: $primary; }
     }
   }
 }

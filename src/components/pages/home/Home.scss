@@ -22,9 +22,7 @@
     }
     .buttons {
       margin-top: calc(#{$margin} * 2);
-      button {
-        margin-right: $margin;
-      }
+      button { margin-right: $margin; }
     }
   }
 }
@@ -39,7 +37,7 @@
       width: 200px;
       height: 200px;
       border-radius: $border-radius;
-      background: $primary;
+      background: $white;
       opacity: 0;
       animation: bg linear 10s infinite;
       transition: all .5s ease-in-out;
@@ -84,13 +82,16 @@
     transform: translateY(0) rotate(0deg);
     opacity: 0;
     border-radius: 0;
+    background: $white;
   }
   50% {
-    opacity: .25;
+    opacity: .1;
+    background: $primary;
   }
   100%{
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+    background: $white;
   }
 }

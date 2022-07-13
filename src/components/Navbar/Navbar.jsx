@@ -18,7 +18,7 @@ const Navbar = () => {
                 </NavLink>
             </ul>
         </nav>
-    );
-};
+    )
+}
 
 export default Navbar;

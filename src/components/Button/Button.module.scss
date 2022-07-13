@@ -5,16 +5,25 @@
   cursor: pointer;
   border: 2px solid $primary;
   text-transform: uppercase;
+  transition: all .25s ease-in-out;
 }
 
 .btnOutline {
   @extend %btn;
   background: transparent;
   color: $primary;
+  &:hover {
+    background: $primary;
+    color: $black;
+  }
 }
 
 .btnDefault {
   @extend %btn;
   background: $primary;
   color: $black;
+  &:hover {
+    background: transparent;
+    color: $primary;
+  }
 }
